@@ -144,10 +144,10 @@ class Mavic (Robot):
         # Specify the patrol coordinates
         waypoints = [[-3, 2], [-6, 2], [-6, 1], [-3, 5]]
         # target altitude of the robot in meters
-        self.target_altitude = 7
+        self.target_altitude = 5
 
         while self.step(self.time_step) != -1:
-        
+
             # Read sensors
             roll, pitch, yaw = self.imu.getRollPitchYaw()
             x_pos, y_pos, altitude = self.gps.getValues()
